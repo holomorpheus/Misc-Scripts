@@ -18,7 +18,7 @@ phi = golden;
 
 
 #------------------------------------
-# Chossing between Archimedean or Golde spiral
+# Chossing between Archimedean or Golden spiral
 
 Archimedes = False;
 
@@ -44,7 +44,7 @@ diagonals = True;
 
 if Archimedes and Golden:
     print("You can't have both at once silly.")
-    quit()
+    raise SystemExit
 else:
     if Archimedes:
         # Archimedes
@@ -55,7 +55,7 @@ else:
             return a*phi**(2*theta/pi)
     else:
         print("No spirals today?")
-        quit() 
+        raise SystemExit 
 
 #------------------------------------
 # Defining spirals
